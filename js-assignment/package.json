@@ -1,0 +1,14 @@
+{
+  "name": "js-assignment-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "start": "serve src",
+    "test": "./test_commands.sh"
+  }
+}
