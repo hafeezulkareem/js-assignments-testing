@@ -16,12 +16,16 @@
                   class="todo-input"
                   type="text"
                   placeholder="What todo..."
-                  onblur="validateTodo()"
+                  onblur="checkTodoLength()"
                   onkeypress="validateKeyAndAddTodo(event)"
                />
                <span id="errorMessage" class="errorMessage"></span>
             </form>
-            <button type="button" class="addTodoButton" onclick="addTodo()">
+            <button
+               type="button"
+               class="addTodoButton"
+               onclick="validateAndAddTodo()"
+            >
                Add Todo
             </button>
          </div>
