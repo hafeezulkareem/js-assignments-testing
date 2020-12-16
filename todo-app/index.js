@@ -15,15 +15,15 @@ function validateTodo() {
 }
 
 function addTodo() {
-   var item = todoInputElement.value;
-   if (item == "") {
+   const todo = todoInputElement.value;
+   if (todo == "") {
       errorMessageElement.innerHTML = "Todo should not be empty";
       errorMessageElement.style.display = "inline";
    } else {
       errorMessageElement.innerHTML = "";
       errorMessageElement.style.display = "none";
-      var todo = `<li>${item}</li>`;
-      todosListContainerElement.innerHTML += todo;
+      const todoElement = `<li><input class="todoCheckbox" type="checkbox" value="${todo}" />${todo}</li>`;
+      todosListContainerElement.innerHTML += todoElement;
       todoInputElement.value = "";
    }
 }

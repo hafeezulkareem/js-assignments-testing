@@ -26,14 +26,6 @@ body {
    margin-top: 16px;
 }
 
-#alert {
-   margin-left: 25px;
-   margin-bottom: 10px;
-   font-size: 18px;
-   color: rgba(0, 0, 0);
-   display: none;
-}
-
 .todo-input {
    width: 320px;
    height: 30px;
@@ -92,12 +84,13 @@ body {
 }
 
 .todos-container ul li {
+   display: flex;
+   align-items: center;
    padding: 15px;
    background: #f4f4f4;
    margin-bottom: 15px;
 }
 
-.todos-container ul li span {
-   float: right;
-   cursor: pointer;
+.todoCheckbox {
+   margin-right: 8px;
 }
