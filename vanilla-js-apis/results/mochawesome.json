@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-16T10:14:46.416Z",
+    "end": "2020-12-16T10:14:46.965Z",
+    "duration": 549,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fc28b9f2-8b5a-4b27-a4b8-250164cdc1ec",
+      "title": "",
+      "fullFile": "cypress/integration/vanilla_js_apis.spec.js",
+      "file": "cypress/integration/vanilla_js_apis.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e60620c6-81f1-49f7-a52e-4f42f95eca68",
+          "title": "VanillaJS APIs test cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should test posts fetching state",
+              "fullTitle": "VanillaJS APIs test cases should test posts fetching state",
+              "timedOut": null,
+              "duration": 185,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+              "err": {},
+              "uuid": "288b7293-a640-448d-ba76-828b0a92bdb8",
+              "parentUUID": "e60620c6-81f1-49f7-a52e-4f42f95eca68",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test posts failure state",
+              "fullTitle": "VanillaJS APIs test cases should test posts failure state",
+              "timedOut": null,
+              "duration": 171,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+              "err": {},
+              "uuid": "372aa0cb-577b-489e-b216-871ba2186b1b",
+              "parentUUID": "e60620c6-81f1-49f7-a52e-4f42f95eca68",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test posts failure state",
+              "fullTitle": "VanillaJS APIs test cases should test posts failure state",
+              "timedOut": null,
+              "duration": 175,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+              "err": {},
+              "uuid": "5957c2f9-dc52-4a2a-b35a-ca47b2cf4700",
+              "parentUUID": "e60620c6-81f1-49f7-a52e-4f42f95eca68",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "288b7293-a640-448d-ba76-828b0a92bdb8",
+            "372aa0cb-577b-489e-b216-871ba2186b1b",
+            "5957c2f9-dc52-4a2a-b35a-ca47b2cf4700"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 531,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
