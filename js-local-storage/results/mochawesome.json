@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-16T16:33:14.067Z",
+    "end": "2020-12-16T16:33:14.994Z",
+    "duration": 927,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "24d4f023-9168-4e80-9f54-932da6015683",
+      "title": "",
+      "fullFile": "cypress/integration/counter.spec.js",
+      "file": "cypress/integration/counter.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0c999f48-4e58-4ecc-a0dd-5053705c787c",
+          "title": "Counter app tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should test counter app decrement functionality",
+              "fullTitle": "Counter app tests should test counter app decrement functionality",
+              "timedOut": null,
+              "duration": 301,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#decrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"-1\");\ncy.get(\"#decrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"-2\");",
+              "err": {},
+              "uuid": "82bb418b-a94d-4293-b03b-0a6c7c48a6d5",
+              "parentUUID": "0c999f48-4e58-4ecc-a0dd-5053705c787c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test counter app increment functionality",
+              "fullTitle": "Counter app tests should test counter app increment functionality",
+              "timedOut": null,
+              "duration": 267,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#incrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"-1\");\ncy.get(\"#incrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"0\");",
+              "err": {},
+              "uuid": "d88439f4-d264-4f5c-ad06-dd157d3627c9",
+              "parentUUID": "0c999f48-4e58-4ecc-a0dd-5053705c787c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should test counter app increment after clearLocalStorage functionality",
+              "fullTitle": "Counter app tests should test counter app increment after clearLocalStorage functionality",
+              "timedOut": null,
+              "duration": 307,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#incrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"1\");\ncy.reload();\ncy.get(\"#incrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"2\");",
+              "err": {},
+              "uuid": "5781f571-75fc-4031-b7fb-1699716f975e",
+              "parentUUID": "0c999f48-4e58-4ecc-a0dd-5053705c787c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "82bb418b-a94d-4293-b03b-0a6c7c48a6d5",
+            "d88439f4-d264-4f5c-ad06-dd157d3627c9",
+            "5781f571-75fc-4031-b7fb-1699716f975e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 875,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

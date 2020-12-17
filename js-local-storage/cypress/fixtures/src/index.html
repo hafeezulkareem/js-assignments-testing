@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>JS Assignments Testing POC</title>
+   </head>
+   <body onunload="saveCount()" onload="restoreCount()">
+      <div>
+         <button id="decrementButton" onclick="decrement()">-</button>
+         <span id="count">0</span>
+         <button id="incrementButton" onclick="increment()">+</button>
+      </div>
+
+      <script src="index.js"></script>
+   </body>
+</html>

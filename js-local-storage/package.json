@@ -1,0 +1,13 @@
+{
+  "name": "cypress-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "6.1.0",
+    "mochawesome": "6.2.1"
+  },
+  "scripts": {
+    "test": "cypress run"
+  }
+}

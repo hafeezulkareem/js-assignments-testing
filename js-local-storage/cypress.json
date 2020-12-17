@@ -1,0 +1,11 @@
+{
+   "video": false,
+   "screenshotOnRunFailure": false,
+   "reporter": "mochawesome",
+   "reporterOptions": {
+      "reportDir": "results",
+      "overwrite": true,
+      "html": false,
+      "json": true
+   }
+}
