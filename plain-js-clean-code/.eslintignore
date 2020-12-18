@@ -1,0 +1,11 @@
+src/*.svg
+node_modules/
+npm-debug.log
+yarn-error.log
+config/
+build/
+public/
+dist/
+styles.tsx
+styleguide/
+*.gen.js
