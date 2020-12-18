@@ -2,9 +2,9 @@ import React from "react";
 import "./App.css";
 
 class App extends React.Component {
-  showAlert() {
+  showAlert = () => {
     alert("Hi, this is alert");
-  }
+  };
 
   render() {
     return (

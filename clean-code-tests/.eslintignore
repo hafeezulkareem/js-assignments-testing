@@ -1,4 +1,3 @@
-src/*.css
 src/*.svg
 node_modules/
 npm-debug.log
