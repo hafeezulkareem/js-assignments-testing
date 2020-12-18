@@ -22,6 +22,7 @@ class App extends React.Component {
    };
 
    render() {
+      const { text } = this.props;
       return (
          <div className="App">
             <button onClick={this.decrement}>-1</button>

@@ -4,8 +4,9 @@ import App from "./App";
 
 describe("Testing App", () => {
    it("should test Counter app state", () => {
-      const counterComponent = shallow(<App />);
+      const counterComponent = shallow(<App text="Sample text" />);
       expect(counterComponent.state().count).toBe(0);
+      expect(counterComponent.instance().props.text).toBe("Sample text");
    });
 
    it("should test Counter app increment state", () => {

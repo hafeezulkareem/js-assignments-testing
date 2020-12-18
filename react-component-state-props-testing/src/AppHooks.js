@@ -1,8 +1,9 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 import "./App.css";
 
-function App() {
+function App(props) {
    const [count, setCount] = useState(0);
 
    const decrement = () => {
@@ -24,5 +25,9 @@ function App() {
       </div>
    );
 }
+
+App.propTypes = {
+   text: PropTypes.string.isRequired,
+};
 
 export default App;
