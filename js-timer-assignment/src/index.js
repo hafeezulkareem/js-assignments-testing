@@ -1,4 +1,5 @@
-let count = 1,
+let count = 0,
+  timeAmount = 1000,
   timerId = undefined;
 
 _("count").innerHTML = count;
@@ -17,10 +18,9 @@ function increment() {
   _("count").innerHTML = count;
 }
 
-function startIncrementor(_, timeAmount = 1000) {
-  if (!timerId) {
-    timerId = setInterval(increment, timeAmount);
-  }
+function startIncrementor() {
+  stopIncrementor();
+  timerId = setInterval(increment, timeAmount);
 }
 
 function stopIncrementor() {
