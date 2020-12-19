@@ -1,0 +1,185 @@
+[
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/testing-for-pureeslint/src/App.js",
+    "messages": [
+      {
+        "ruleId": "no-alert",
+        "severity": 2,
+        "message": "Unexpected alert.",
+        "line": 6,
+        "column": 5,
+        "nodeType": "CallExpression",
+        "messageId": "unexpected",
+        "endLine": 6,
+        "endColumn": 31
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from \"react\";\nimport \"./App.css\";\n\nclass App extends React.Component {\n  showAlert = () => {\n    alert(\"Hi, this is alert\");\n  };\n\n  render() {\n    return (\n      <div className=\"App\">\n        <button onClick={this.showAlert}>Click Me</button>\n      </div>\n    );\n  }\n}\n\nexport default App;\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/testing-for-pureeslint/src/App.test.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'React' is defined but never used.",
+        "line": 1,
+        "column": 8,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'App' is defined but never used.",
+        "line": 3,
+        "column": 8,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'describe' is not defined.",
+        "line": 5,
+        "column": 1,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 5,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'test' is not defined.",
+        "line": 6,
+        "column": 4,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 6,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'expect' is not defined.",
+        "line": 9,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 9,
+        "endColumn": 13
+      }
+    ],
+    "errorCount": 5,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from \"react\";\nimport { render, screen } from \"@testing-library/react\";\nimport App from \"./App\";\n\ndescribe(\"App test cases\", () => {\n   test(\"renders learn react link\", () => {\n      render(<App />);\n      const linkElement = screen.getByText(/Click Me/i);\n      expect(linkElement).toBeInTheDocument();\n   });\n});\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/testing-for-pureeslint/src/ArrowCssTesting/index.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'React' is defined but never used.",
+        "line": 1,
+        "column": 8,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "no-alert",
+        "severity": 2,
+        "message": "Unexpected alert.",
+        "line": 5,
+        "column": 5,
+        "nodeType": "CallExpression",
+        "messageId": "unexpected",
+        "endLine": 5,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-alert",
+        "severity": 2,
+        "message": "Unexpected alert.",
+        "line": 6,
+        "column": 5,
+        "nodeType": "CallExpression",
+        "messageId": "unexpected",
+        "endLine": 6,
+        "endColumn": 21
+      }
+    ],
+    "errorCount": 3,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from \"react\";\n\nclass ArrowCss {\n  componentDidMount() {\n    alert(\"testing\");\n    alert(\"testing\");\n  }\n  render() {\n    return \"\";\n  }\n}\nexport default ArrowCss;\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/testing-for-pureeslint/src/index.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'React' is defined but never used.",
+        "line": 1,
+        "column": 8,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'App' is defined but never used.",
+        "line": 4,
+        "column": 8,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 4,
+        "endColumn": 11
+      }
+    ],
+    "errorCount": 2,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from 'react';\nimport ReactDOM from 'react-dom';\nimport './index.css';\nimport App from './App';\nimport reportWebVitals from './reportWebVitals';\n\nReactDOM.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>,\n  document.getElementById('root')\n);\n\n// If you want to start measuring performance in your app, pass a function\n// to log results (for example: reportWebVitals(console.log))\n// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals\nreportWebVitals();\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/testing-for-pureeslint/src/reportWebVitals.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/testing-for-pureeslint/src/setupTests.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  }
+]
