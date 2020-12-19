@@ -7,14 +7,16 @@ class App extends React.Component {
       super(props);
       this.state = {
          count: 0,
+         text: "",
       };
    }
 
    componentDidMount() {
-      const { fetch } = this.props;
+      const { fetch, text } = this.props;
       if (fetch) {
          fetch();
       }
+      this.setState((state) => ({ count: state.count, text }));
       this.timer = setTimeout(this.autoIncrementCount, 1000);
    }
 
@@ -22,6 +24,13 @@ class App extends React.Component {
       if (this.timer) {
          clearTimeout(this.timer);
          this.timer = undefined;
+      }
+   }
+
+   componentDidUpdate(prevProps) {
+      const { text } = this.props;
+      if (prevProps.text !== this.props.text) {
+         this.setState((state) => ({ count: state.count, text }));
       }
    }
 
