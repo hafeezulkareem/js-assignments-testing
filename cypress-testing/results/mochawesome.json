@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-14T16:04:20.163Z",
-    "end": "2020-12-14T16:04:20.729Z",
-    "duration": 566,
+    "start": "2020-12-19T05:07:43.581Z",
+    "end": "2020-12-19T05:07:44.133Z",
+    "duration": 552,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5ba96cde-66d8-47c2-b5de-ce9a4a432d6f",
+      "uuid": "51d1845b-f1d8-4274-926c-627d4f39b576",
       "title": "",
       "fullFile": "cypress/integration/counter.spec.js",
       "file": "cypress/integration/counter.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0de93e1f-e5bb-4f09-85cc-cb9b80eb9add",
+          "uuid": "bf440991-9827-432d-a91b-7ed09bd89b76",
           "title": "Counter app tests",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should test counter app decrement functionality",
               "fullTitle": "Counter app tests should test counter app decrement functionality",
               "timedOut": null,
-              "duration": 282,
+              "duration": 286,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\"#decrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"-1\");\ncy.get(\"#decrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"-2\");",
               "err": {},
-              "uuid": "06eb0d3d-292a-4634-ba2d-f4d2106cce0d",
-              "parentUUID": "0de93e1f-e5bb-4f09-85cc-cb9b80eb9add",
+              "uuid": "01aff36a-40ea-4494-ab2e-d1ce49327a9c",
+              "parentUUID": "bf440991-9827-432d-a91b-7ed09bd89b76",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should test counter app increment functionality",
               "fullTitle": "Counter app tests should test counter app increment functionality",
               "timedOut": null,
-              "duration": 245,
+              "duration": 226,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.get(\"#incrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"1\");\ncy.get(\"#incrementButton\").click();\ncy.get(\"#count\").should(\"contain\", \"2\");",
               "err": {},
-              "uuid": "bca67f84-40d4-43fa-bd2a-00946c32a277",
-              "parentUUID": "0de93e1f-e5bb-4f09-85cc-cb9b80eb9add",
+              "uuid": "3e03153d-b144-41d0-8766-3e3b6b0671f1",
+              "parentUUID": "bf440991-9827-432d-a91b-7ed09bd89b76",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "06eb0d3d-292a-4634-ba2d-f4d2106cce0d",
-            "bca67f84-40d4-43fa-bd2a-00946c32a277"
+            "01aff36a-40ea-4494-ab2e-d1ce49327a9c",
+            "3e03153d-b144-41d0-8766-3e3b6b0671f1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 527,
+          "duration": 512,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
