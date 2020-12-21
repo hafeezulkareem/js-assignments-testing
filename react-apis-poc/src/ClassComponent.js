@@ -10,7 +10,6 @@ class PlassComponent extends React.Component {
   }
 
   doNetworkCallForItems = () => {
-    // https://reqres.in/api/products/
     fetch("https://reqres.in/api/products/")
       .then((response) => response.json())
       .then((result) => this.setState({ data: result["total"] }));
