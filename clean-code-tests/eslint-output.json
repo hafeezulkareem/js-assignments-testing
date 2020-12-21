@@ -1,104 +1,559 @@
 [
-   {
-      "filePath": "/home/ib_developer/Desktop/js-assignments-testing/clean-code-tests/src/App.js",
-      "messages": [
-         {
-            "ruleId": "no-alert",
-            "severity": 2,
-            "message": "Unexpected alert.",
-            "line": 6,
-            "column": 5,
-            "nodeType": "CallExpression",
-            "messageId": "unexpected",
-            "endLine": 6,
-            "endColumn": 31
-         }
-      ],
-      "errorCount": 1,
-      "warningCount": 0,
-      "fixableErrorCount": 0,
-      "fixableWarningCount": 0,
-      "source": "import React from \"react\";\nimport \"./App.css\";\n\nclass App extends React.Component {\n  showAlert = () => {\n    alert(\"Hi, this is alert\");\n  };\n\n  render() {\n    return (\n      <div className=\"App\">\n        <button onClick={this.showAlert}>Click Me</button>\n      </div>\n    );\n  }\n}\n\nexport default App;\n",
-      "usedDeprecatedRules": []
-   },
-   {
-      "filePath": "/home/ib_developer/Desktop/js-assignments-testing/clean-code-tests/src/App.test.js",
-      "messages": [],
-      "errorCount": 0,
-      "warningCount": 0,
-      "fixableErrorCount": 0,
-      "fixableWarningCount": 0,
-      "usedDeprecatedRules": []
-   },
-   {
-      "filePath": "/home/ib_developer/Desktop/js-assignments-testing/clean-code-tests/src/ArrowCssTesting/index.js",
-      "messages": [
-         {
-            "ruleId": "no-unused-vars",
-            "severity": 2,
-            "message": "'React' is defined but never used.",
-            "line": 1,
-            "column": 8,
-            "nodeType": "Identifier",
-            "messageId": "unusedVar",
-            "endLine": 1,
-            "endColumn": 13
-         },
-         {
-            "ruleId": "no-alert",
-            "severity": 2,
-            "message": "Unexpected alert.",
-            "line": 5,
-            "column": 5,
-            "nodeType": "CallExpression",
-            "messageId": "unexpected",
-            "endLine": 5,
-            "endColumn": 21
-         },
-         {
-            "ruleId": "no-alert",
-            "severity": 2,
-            "message": "Unexpected alert.",
-            "line": 6,
-            "column": 5,
-            "nodeType": "CallExpression",
-            "messageId": "unexpected",
-            "endLine": 6,
-            "endColumn": 21
-         }
-      ],
-      "errorCount": 3,
-      "warningCount": 0,
-      "fixableErrorCount": 0,
-      "fixableWarningCount": 0,
-      "source": "import React from \"react\";\n\nclass ArrowCss {\n  componentDidMount() {\n    alert(\"testing\");\n    alert(\"testing\");\n  }\n  render() {\n    return \"\";\n  }\n}\nexport default ArrowCss;\n",
-      "usedDeprecatedRules": []
-   },
-   {
-      "filePath": "/home/ib_developer/Desktop/js-assignments-testing/clean-code-tests/src/index.js",
-      "messages": [],
-      "errorCount": 0,
-      "warningCount": 0,
-      "fixableErrorCount": 0,
-      "fixableWarningCount": 0,
-      "usedDeprecatedRules": []
-   },
-   {
-      "filePath": "/home/ib_developer/Desktop/js-assignments-testing/clean-code-tests/src/reportWebVitals.js",
-      "messages": [],
-      "errorCount": 0,
-      "warningCount": 0,
-      "fixableErrorCount": 0,
-      "fixableWarningCount": 0,
-      "usedDeprecatedRules": []
-   },
-   {
-      "filePath": "/home/ib_developer/Desktop/js-assignments-testing/clean-code-tests/src/setupTests.js",
-      "messages": [],
-      "errorCount": 0,
-      "warningCount": 0,
-      "fixableErrorCount": 0,
-      "fixableWarningCount": 0,
-      "usedDeprecatedRules": []
-   }
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/clean-code-tests/src/App.js",
+    "messages": [
+      {
+        "ruleId": "no-alert",
+        "severity": 2,
+        "message": "Unexpected alert.",
+        "line": 6,
+        "column": 5,
+        "nodeType": "CallExpression",
+        "messageId": "unexpected",
+        "endLine": 6,
+        "endColumn": 31
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from \"react\";\nimport \"./App.css\";\n\nclass App extends React.Component {\n  showAlert = () => {\n    alert(\"Hi, this is alert\");\n  };\n\n  render() {\n    return (\n      <div className=\"App\">\n        <button onClick={this.showAlert}>Click Me</button>\n      </div>\n    );\n  }\n}\n\nexport default App;\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/clean-code-tests/src/App.test.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/clean-code-tests/src/ArrowCssTesting/index.js",
+    "messages": [
+      {
+        "ruleId": "no-alert",
+        "severity": 2,
+        "message": "Unexpected alert.",
+        "line": 8,
+        "column": 5,
+        "nodeType": "CallExpression",
+        "messageId": "unexpected",
+        "endLine": 8,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "getter-return",
+        "severity": 2,
+        "message": "Expected to return a value in getter 'something'.",
+        "line": 10,
+        "column": 3,
+        "nodeType": "FunctionExpression",
+        "messageId": "expected",
+        "endLine": 10,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-console",
+        "severity": 2,
+        "message": "Unexpected console statement.",
+        "line": 11,
+        "column": 5,
+        "nodeType": "MemberExpression",
+        "messageId": "unexpected",
+        "endLine": 11,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "max-lines-per-function",
+        "severity": 2,
+        "message": "Function 'getSomeError' has too many lines (30). Maximum allowed is 20.",
+        "line": 19,
+        "column": 8,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "exceed",
+        "endLine": 48,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 20,
+        "column": 10,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 21,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 21,
+        "column": 23,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 22,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-dupe-else-if",
+        "severity": 2,
+        "message": "This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain.",
+        "line": 22,
+        "column": 14,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 22,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 22,
+        "column": 23,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 23,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "eqeqeq",
+        "severity": 2,
+        "message": "Expected '===' and instead saw '=='.",
+        "line": 24,
+        "column": 9,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 24,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 24,
+        "column": 17,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 25,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "prefer-const",
+        "severity": 2,
+        "message": "'ab' is never reassigned. Use 'const' instead.",
+        "line": 26,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "useConst",
+        "endLine": 26,
+        "endColumn": 9,
+        "fix": { "range": [371, 374], "text": "const" }
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'ab' is assigned a value but never used.",
+        "line": 26,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 26,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "camelcase",
+        "severity": 2,
+        "message": "Identifier 'max_length' is not in camel case.",
+        "line": 27,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "notCamelCase",
+        "endLine": 27,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "prefer-const",
+        "severity": 2,
+        "message": "'max_length' is never reassigned. Use 'const' instead.",
+        "line": 27,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "useConst",
+        "endLine": 27,
+        "endColumn": 17,
+        "fix": { "range": [387, 390], "text": "const" }
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'max_length' is assigned a value but never used.",
+        "line": 27,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 27,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 29,
+        "column": 10,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 30,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 30,
+        "column": 23,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 31,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-dupe-else-if",
+        "severity": 2,
+        "message": "This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain.",
+        "line": 31,
+        "column": 14,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 31,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 31,
+        "column": 23,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 32,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "eqeqeq",
+        "severity": 2,
+        "message": "Expected '===' and instead saw '=='.",
+        "line": 33,
+        "column": 9,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 33,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 33,
+        "column": 17,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 34,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 36,
+        "column": 10,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 37,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 37,
+        "column": 23,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 38,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-dupe-else-if",
+        "severity": 2,
+        "message": "This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain.",
+        "line": 38,
+        "column": 14,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 38,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 38,
+        "column": 23,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 39,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "eqeqeq",
+        "severity": 2,
+        "message": "Expected '===' and instead saw '=='.",
+        "line": 40,
+        "column": 9,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 40,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 40,
+        "column": 17,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 41,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 42,
+        "column": 10,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 43,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 43,
+        "column": 23,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 44,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-dupe-else-if",
+        "severity": 2,
+        "message": "This branch can never execute. Its condition is a duplicate or covered by previous conditions in the if-else-if chain.",
+        "line": 44,
+        "column": 14,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 44,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 44,
+        "column": 23,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 45,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "eqeqeq",
+        "severity": 2,
+        "message": "Expected '===' and instead saw '=='.",
+        "line": 46,
+        "column": 9,
+        "nodeType": "BinaryExpression",
+        "messageId": "unexpected",
+        "endLine": 46,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 46,
+        "column": 17,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 47,
+        "endColumn": 4
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'TestingClass' is defined but never used.",
+        "line": 50,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 50,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-empty-function",
+        "severity": 2,
+        "message": "Unexpected empty constructor.",
+        "line": 51,
+        "column": 17,
+        "nodeType": "FunctionExpression",
+        "messageId": "unexpected",
+        "endLine": 51,
+        "endColumn": 19
+      },
+      {
+        "ruleId": "no-var",
+        "severity": 2,
+        "message": "Unexpected var, use let or const instead.",
+        "line": 53,
+        "column": 5,
+        "nodeType": "VariableDeclaration",
+        "messageId": "unexpectedVar",
+        "endLine": 53,
+        "endColumn": 15,
+        "fix": { "range": [724, 727], "text": "let" }
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'a' is assigned a value but never used.",
+        "line": 53,
+        "column": 9,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 53,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "prefer-const",
+        "severity": 2,
+        "message": "'b' is never reassigned. Use 'const' instead.",
+        "line": 54,
+        "column": 9,
+        "nodeType": "Identifier",
+        "messageId": "useConst",
+        "endLine": 54,
+        "endColumn": 10,
+        "fix": { "range": [739, 742], "text": "const" }
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'b' is assigned a value but never used.",
+        "line": 54,
+        "column": 9,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 54,
+        "endColumn": 10
+      },
+      {
+        "ruleId": "no-constructor-return",
+        "severity": 2,
+        "message": "Unexpected return statement in constructor.",
+        "line": 61,
+        "column": 5,
+        "nodeType": "ReturnStatement",
+        "messageId": "unexpected",
+        "endLine": 61,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "max-len",
+        "severity": 2,
+        "message": "This line has a length of 101. Maximum allowed is 80.",
+        "line": 63,
+        "column": 1,
+        "nodeType": "Program",
+        "messageId": "max",
+        "endLine": 63,
+        "endColumn": 102
+      },
+      {
+        "ruleId": "no-empty-function",
+        "severity": 2,
+        "message": "Unexpected empty method 'writingAFunctionNaameToHavingALineLengthGreaterThanEightyLinesIfItShowsErrorThenItsIsTheSuccss'.",
+        "line": 63,
+        "column": 100,
+        "nodeType": "FunctionExpression",
+        "messageId": "unexpected",
+        "endLine": 63,
+        "endColumn": 102
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'someThinsInstance' is assigned a value but never used.",
+        "line": 66,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 66,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "new-cap",
+        "severity": 2,
+        "message": "A constructor name should not start with a lowercase letter.",
+        "line": 66,
+        "column": 31,
+        "nodeType": "NewExpression",
+        "messageId": "lower",
+        "endLine": 66,
+        "endColumn": 41
+      }
+    ],
+    "errorCount": 44,
+    "warningCount": 0,
+    "fixableErrorCount": 4,
+    "fixableWarningCount": 0,
+    "source": "import React from \"react\";\n\nclass ArrowCss {\n  constructor() {\n    this.something = \"\";\n  }\n  componentDidMount() {\n    alert(\"testing\");\n  }\n  get something() {\n    console.log(\"\");\n  }\n  render() {\n    return \"\";\n  }\n}\nexport default ArrowCss;\n\nexport function getSomeError(a, b) {\n  if (a) {\n  } else if (a === b) {\n  } else if (a === b) {\n  }\n  if (a == \"2\") {\n  }\n  let ab = \"3\";\n  let max_length = 3;\n\n  if (a) {\n  } else if (a === b) {\n  } else if (a === b) {\n  }\n  if (a == \"2\") {\n  }\n\n  if (a) {\n  } else if (a === b) {\n  } else if (a === b) {\n  }\n  if (a == \"2\") {\n  }\n  if (a) {\n  } else if (a === b) {\n  } else if (a === b) {\n  }\n  if (a == \"2\") {\n  }\n}\n\nclass TestingClass {\n  constructor() {}\n  render() {\n    var a = 2;\n    let b = 3;\n    return <div></div>;\n  }\n}\n\nclass someThings {\n  constructor() {\n    return;\n  }\n  writingAFunctionNaameToHavingALineLengthGreaterThanEightyLinesIfItShowsErrorThenItsIsTheSuccss() {}\n}\n\nconst someThinsInstance = new someThings();\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/clean-code-tests/src/index.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/clean-code-tests/src/reportWebVitals.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/home/ib_developer/Documents/js-assignments-testing/clean-code-tests/src/setupTests.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  }
 ]

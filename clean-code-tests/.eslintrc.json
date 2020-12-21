@@ -16,6 +16,23 @@
   "plugins": ["react"],
   "rules": {
     "no-console": "error",
-    "no-alert": "error"
+    "no-alert": "error",
+    "getter-return": "error",
+    "no-dupe-args": "error",
+    "no-dupe-else-if": "error",
+    "no-dupe-keys": "error",
+    "constructor-super": "error",
+    "no-this-before-super": "error",
+    "prefer-const": "error",
+    "no-var": "error",
+    "camelcase": "error",
+    "new-cap": "error",
+    "max-lines-per-function": ["error", 20],
+    "max-lines": "error",
+    "max-len": "error",
+    "max-depth": "error",
+    "no-empty-function": "error",
+    "eqeqeq": "error",
+    "no-constructor-return":"error"
   }
 }
