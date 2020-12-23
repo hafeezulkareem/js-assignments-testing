@@ -1,5 +1,5 @@
 .app {
-   background: #209cee;
+   background: steelblue;
    padding: 30px;
    height: 100vh;
 }
@@ -21,4 +21,16 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+}
+
+@media only screen and (min-width: 760px) {
+   .app {
+      background-color: orangered;
+   }
+}
+
+@media only screen and (min-width: 1024px) {
+   .app {
+      background-color: seagreen;
+   }
 }
