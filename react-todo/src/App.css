@@ -1,5 +1,5 @@
 .app {
-   background: steelblue;
+   background: rgb(70, 130, 180);
    padding: 30px;
    height: 100vh;
 }
@@ -25,12 +25,12 @@
 
 @media only screen and (min-width: 760px) {
    .app {
-      background-color: orangered;
+      background-color: rgb(255, 69, 0);
    }
 }
 
 @media only screen and (min-width: 1024px) {
    .app {
-      background-color: seagreen;
+      background-color: rgb(46, 139, 87);
    }
 }
