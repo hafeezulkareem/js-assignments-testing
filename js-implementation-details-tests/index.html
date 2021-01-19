@@ -6,6 +6,13 @@
       <title>JavaScript Implementation Details Testing</title>
    </head>
    <body>
-      <button id="button">Click Me!</button>
+      <button id="buttonJS">Click Me!</button>
+      <button id="buttonHTML">Click Me too!</button>
+      <script>
+         const button = document.getElementById("buttonHTML");
+         button.addEventListener("click", () => {
+            console.log("You clicked HTML button");
+         });
+      </script>
    </body>
 </html>
